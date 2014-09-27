@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.videouploaddownload.MainActivity" >
+
+    <Button
+        android:id="@+id/btnCamara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capturar Video Y Subir"
+        android:onClick="dispatchTakeVideoIntent" />
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descargar Video y Mostrar"
+        android:onClick="downloadAndPlay" />
+
+    <Button
+        android:id="@+id/btnImageUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subir Imagen"
+        android:onClick="GaleriaImg" />
+
+    <Button
+        android:id="@+id/btnImageDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descargar Imagen"
+        android:onClick="downloadAndPlay" />
+
+    <Button
+        android:id="@+id/btnAudioUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subir Audio" />
+
+    <Button
+        android:id="@+id/btnDownloadAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descargar Audio"
+        android:onClick="downloadAndPlay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/btnCHingon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_launcher" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
